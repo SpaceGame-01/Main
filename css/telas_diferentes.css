@@ -2,11 +2,7 @@
 
 @media screen and (max-width: 995px) {
 
-    body {
-        height: 100vh;
-        width: 100%;
-        background-size: 250% 250%;
-    }
+   
 
     ::-webkit-scrollbar {
         display: none;
@@ -14,6 +10,12 @@
 }
 
 @media screen and (min-width: 995px) {
+    body {
+        width: 100%;
+        height: 100vh;
+    
+        background-size: 300% 300%;
+    } 
     header {
         height: 15%;
     }
