@@ -81,7 +81,7 @@ header section a {
 section .img_cntt {
     width: 30px;
     margin: 5px;
-    border-radius: 50% 10%;
+    border-radius: 50%;
     position: relative;
     top: -63px;
     background-color: black;
