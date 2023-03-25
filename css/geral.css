@@ -60,14 +60,14 @@ header {
     z-index: 1;
 }
 
-header h1 {
-    color: var(--roxo);
-    font-size: 5em;
-    animation: logo 10s .6s ease-in-out reverse infinite;
-}header h1 a {
-    -webkit-text-stroke-width: .5px;
-    -webkit-text-stroke-color: black;
+header {
+    height: 6%;
 }
+
+header h1 {
+    font-size: 2em;
+}
+
 
 header section a {
     text-decoration: none
@@ -78,27 +78,41 @@ header section a {
     text-align: right;
 }
 
+
 section .img_cntt {
-    width: 30px;
-    margin: 5px;
-    border-radius: 50%;
     position: relative;
-    top: -63px;
-    background-color: black;
-    box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.707);
+    width: 25px;
+    display: inline-block;
+    border-radius: 50%;
+    margin: 2px;
+    left: -2%;
+    top: -35px;
+
 }
 
 main {
-    height: 100%;
-    width: 75%;
-    margin: auto;
-
-    border-radius: 15px;
-    box-shadow: 0px 0px 1px rgba(0, 0, 0, 0.24);
+    display: none;
 }
 
 #cell {
-    display: none;
+    background: var(--fundo-cell);
+    color: #00013b;
+
+    font-family: Arial, Helvetica, sans-serif;
+
+    position: relative;
+    height: 89%;
+    width: 85%;
+
+    margin: auto;
+
+    border-radius: 2%;
+    border: 2px solid rgba(0, 0, 0, 0.11);
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
 }
 
 .imagemGame {
@@ -170,12 +184,6 @@ footer a {
     letter-spacing: 2px;
     text-decoration: none;
     color:var(--link-footer);
-}    
-footer a:hover{
-    color: var(--link-footer-hover);
-    letter-spacing: 3px;
-    text-decoration: underline;
-    transition: .5s;
 }
 
 @keyframes deg {
@@ -185,33 +193,6 @@ footer a:hover{
 
     100% {
         background-position: 100% 50%;
-    }
-}
-
-@keyframes logo {
-    0% {
-        transform: translateY(-2px);
-        
-    }
-
-    25% {
-        transform: translateY(12px);
-        
-    }
-
-    50% {
-        transform: translateY(-2px);
-        
-    }
-
-    75% {
-        transform: translateY(12px);
-        
-    }
-
-    100% {
-        transform: translateY(-2px);
-        filter: hue-rotate(360deg);
     }
 }
 

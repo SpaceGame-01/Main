@@ -1,0 +1,113 @@
+@charset "UTF-8";
+
+@media screen and (max-width: 995px) {
+
+    body {
+        height: 100vh;
+        width: 100%;
+        background-size: 250% 250%;
+    }
+
+
+    #cell p {
+        font-size: 1.7em;
+    }
+
+    footer {
+        height: 3%;
+        bottom: -1px;
+    }
+
+    footer p {
+        font-size: .9em;
+    }
+
+    ::-webkit-scrollbar {
+        display: none;
+    }
+}
+
+@media screen and (min-width: 995px) {
+    header {
+        height: 15%;
+    }
+    header h1 {
+        color: var(--roxo);
+        font-size: 5em;
+        animation: logo 10s .6s ease-in-out reverse infinite;
+    }header h1 a {
+        -webkit-text-stroke-width: .5px;
+        -webkit-text-stroke-color: black;
+    }
+    section .img_cntt {
+        width: 30px;
+        margin: 5px;
+        
+        top: -65px;
+        background-color: black;
+        box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.707);
+    }
+    
+    
+    
+    main {
+        display: block;
+        height: 100%;
+        width: 75%;
+        margin: auto;
+    
+        border-radius: 15px;
+        box-shadow: 0px 0px 1px rgba(0, 0, 0, 0.24);
+    }
+
+    #cell {
+        display: none;
+    }
+
+    .games {
+        position: relative;
+        color: white;
+        width: 20%;
+        height: 18vh;
+        margin: 15px;
+        overflow: hidden;
+        display: inline-block;
+        border-radius: 27% 3%;
+        background: black;
+    }
+    
+    
+    section .img_cntt:hover {
+        transform: translate(-3px, -3px);
+        transition: .2s, border .3s;
+        width: 35px;
+    }
+
+    @keyframes logo {
+        0% {
+            transform: translateY(-2px);
+            
+        }
+    
+        25% {
+            transform: translateY(12px);
+            
+        }
+    
+        50% {
+            transform: translateY(-2px);
+            
+        }
+    
+        75% {
+            transform: translateY(12px);
+            
+        }
+    
+        100% {
+            transform: translateY(-2px);
+            filter: hue-rotate(360deg);
+        }
+    }
+    
+}
