@@ -1,13 +1,13 @@
 @charset "UTF-8";
 
-@media screen and (max-width: 995px) {
+@media screen and (orientation: portrait) {
 
     ::-webkit-scrollbar {
         display: none;
     }
 }
 
-@media screen and (min-width: 995px) {
+@media screen and (orientation: landscape) {
     body {
         width: 100%;
         height: 100vh;
