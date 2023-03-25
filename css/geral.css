@@ -104,13 +104,9 @@ main {
     font-family: Arial, Helvetica, sans-serif;
 
     position: relative;
-    width: 50%;
     height: 83vh;
 
-    margin: auto;
-
     display: none;
-    border-radius: 1% 7%;
     border: 2px outset rgba(0, 0, 0, 0.11);
 }
 
