@@ -8,20 +8,6 @@
         background-size: 250% 250%;
     }
 
-
-    #cell p {
-        font-size: 1.7em;
-    }
-
-    footer {
-        height: 3%;
-        bottom: -1px;
-    }
-
-    footer p {
-        font-size: .9em;
-    }
-
     ::-webkit-scrollbar {
         display: none;
     }
@@ -42,13 +28,17 @@
     section .img_cntt {
         width: 30px;
         margin: 5px;
-        
+
         top: -65px;
         background-color: black;
         box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.707);
     }
     
-    
+    section .img_cntt:hover {
+        transform: translate(-3px, -3px);
+        transition: .2s, border .3s;
+        width: 35px;
+    }
     
     main {
         display: block;
@@ -75,12 +65,47 @@
         border-radius: 27% 3%;
         background: black;
     }
-    
-    
-    section .img_cntt:hover {
-        transform: translate(-3px, -3px);
-        transition: .2s, border .3s;
-        width: 35px;
+
+    .imagemGame {
+        width: 102%;
+        height: 102%;
+
+        background: transparent right center no-repeat fixed;
+        background-size: cover;
+    }
+
+    .imagemGame:hover {
+        width: 105%;
+        height: 105%;
+        transform: translateY(-1px);
+        transition: width .2s ease-in-out, height .2s ease-in-out;
+    }    
+
+    .nome_games{
+        position: absolute;
+        text-align: center;
+
+        width: 100%;
+        top: -100%;
+
+        font-family: var(--fonte-padrao);
+        background-color: var(--fundo-nome-game);
+        color: var(--nome-game);
+
+        border-radius: 0 10vmin 0 0;
+
+        font-weight: bolder;
+        letter-spacing: 1.5px;
+        text-transform: uppercase;
+        font-size: 1.2em;
+    }
+    .nome_games:hover {
+        letter-spacing: 2px;
+        transition: .5s;
+    }
+
+    .ed {
+        color: var(--roxo);
     }
 
     @keyframes logo {
