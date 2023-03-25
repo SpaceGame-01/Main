@@ -46,7 +46,7 @@ body {
 }
 
 header {
-    height: 15%;
+    height: 5%;
     width: 100%;
 
     margin-bottom: 7px;
@@ -60,12 +60,8 @@ header {
     z-index: 1;
 }
 
-header {
-    height: 6%;
-}
-
 header h1 {
-    font-size: 2em;
+    font-size: 2.1em;
 }
 
 
@@ -86,7 +82,7 @@ section .img_cntt {
     border-radius: 50%;
     margin: 2px;
     left: -2%;
-    top: -35px;
+    top: -25px;
 
 }
 
