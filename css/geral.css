@@ -1,0 +1,272 @@
+@charset "UTF-8";
+
+/*
+        PALETA
+
+    BlueViolet
+    BlueViolet 2 -> rgb(83, 26, 136)
+
+*/
+
+@font-face {
+    font-family: Bimanails;
+    src: url("../fonte/BIMANAILS.ttf") format("truetype");
+    font-weight: normal;
+    font-style: normal;
+}
+
+:root {
+    --roxo: blueviolet;
+    --roxo-escuro: rgb(83, 26, 136);
+    --nome-game: white;
+    --fundo-nome-game: #00000070;
+
+    --scrollbar: rgb(157, 81, 229);
+    --link-footer: #e2d4ff;
+    --link-footer-hover: #858389;
+    
+    --fundo-cell: #f9f5ff96;
+
+    --fonte-padrao:'Bimanails', sans-serif;
+
+}
+
+* {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+body {
+    width: 100%;
+    height: 100vh;
+
+    background-image: linear-gradient(-45deg, var(--roxo) ,var(--roxo-escuro));
+    background-size: 300% 300%;
+}
+
+header {
+    height: 15%;
+    width: 100%;
+
+    margin-bottom: 7px;
+    text-align: center;
+
+    font-family: var(--fonte-padrao);
+    background: var(--roxo);
+
+    position: sticky;
+    top: -1px;
+    z-index: 1;
+}
+
+header h1 {
+    color: var(--roxo);
+    font-size: 5em;
+    animation: logo 10s .6s ease-in-out reverse infinite;
+}header h1 a {
+    -webkit-text-stroke-width: .5px;
+    -webkit-text-stroke-color: black;
+}
+
+header section a {
+    text-decoration: none
+}
+
+.cntt {
+    position: relative;
+    text-align: right;
+}
+
+section .img_cntt {
+    width: 30px;
+    margin: 5px;
+    border-radius: 50% 10%;
+    position: relative;
+    top: -63px;
+    background-color: black;
+    box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.707);
+}
+
+main {
+    height: 100%;
+    width: 75%;
+    margin: auto;
+
+    border-radius: 15px;
+    box-shadow: 0px 0px 1px rgba(0, 0, 0, 0.24);
+}
+
+#cell {
+    background: var(--fundo-cell);
+    color: #00013b;
+
+    font-family: Arial, Helvetica, sans-serif;
+
+    position: relative;
+    width: 50%;
+    height: 83vh;
+
+    margin: auto;
+
+    display: none;
+    border-radius: 1% 7%;
+    border: 2px outset rgba(0, 0, 0, 0.11);
+}
+
+.imagemGame {
+    width: 102%;
+    height: 102%;
+
+    background: transparent right center no-repeat fixed;
+    background-size: cover;
+}
+
+.imagemGame:hover {
+    width: 105%;
+    height: 105%;
+    transform: translateY(-1px);
+    transition: width .2s ease-in-out, height .2s ease-in-out;
+}    
+
+.nome_games{
+    position: absolute;
+    text-align: center;
+
+    width: 100%;
+    top: -100%;
+
+    font-family: var(--fonte-padrao);
+    background-color: var(--fundo-nome-game);
+    color: var(--nome-game);
+
+    border-radius: 0 10vmin 0 0;
+
+    font-weight: bolder;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+    font-size: 1.2em;
+}
+.nome_games:hover {
+    letter-spacing: 2px;
+    transition: .5s;
+}
+
+.ed {
+    color: var(--roxo);
+}
+
+footer {
+
+    text-align: center;
+
+    width: 100%;
+    height: 5vh;
+
+    margin-top: 7px;
+    bottom: -1px;
+    
+    animation: sombra 5s ease-in-out infinite;
+
+    background-color: var(--roxo);
+    color: white;
+}footer p {
+    position: relative;
+    top: 14%;
+    letter-spacing: 3px;
+    color: rgba(0, 0, 0, 0.63);
+    font-weight: bolder;
+}
+
+footer a {
+    font-family: 'Times New Roman', Times, serif;
+    letter-spacing: 2px;
+    text-decoration: none;
+    color:var(--link-footer);
+}    
+footer a:hover{
+    color: var(--link-footer-hover);
+    letter-spacing: 3px;
+    text-decoration: underline;
+    transition: .5s;
+}
+
+@keyframes deg {
+    0% {
+        background-position: 0 50%;
+    }
+
+    100% {
+        background-position: 100% 50%;
+    }
+}
+
+@keyframes logo {
+    0% {
+        transform: translateY(-2px);
+        
+    }
+
+    25% {
+        transform: translateY(12px);
+        
+    }
+
+    50% {
+        transform: translateY(-2px);
+        
+    }
+
+    75% {
+        transform: translateY(12px);
+        
+    }
+
+    100% {
+        transform: translateY(-2px);
+        filter: hue-rotate(360deg);
+    }
+}
+
+@keyframes sombra {
+    0% {
+        box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.794);
+    }
+
+    50% {
+        box-shadow: 3px 3px 5px black;
+    }
+    
+    75% {
+        box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.936);
+    }
+    
+    100% {
+        box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.794);
+    }
+}
+
+@keyframes nomegame {
+
+    0%,
+    40%,
+    80% {
+        top: -100%;
+    }
+
+    20%,
+    60%,
+    100% {
+        top: 82%;
+    }
+}
+
+::-webkit-scrollbar {
+    background-color: var(--roxo-escuro);
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: var(--scrollbar);
+    border-radius: 10px;
+    box-shadow:  inset 2px 2px 2px hsl(0deg 0% 100% / 70%), inset -2px -2px 2px rgb(0 0 0 / 50%);
+}

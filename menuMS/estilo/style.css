@@ -1,0 +1,43 @@
+@charset "UTF-8";
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+#contatos {
+    position: relative;
+    top: -30px;
+    text-align: right;
+}
+
+#contatos img {
+    width: 25px;
+    margin: 2px;
+    border-radius: 50%;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.430);
+    box-sizing: content-box;
+}
+
+
+#contatos img:hover {
+    transform: translate(-3px, -3px);
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.623);
+    transition: .4s, border .3s;
+}
+
+#home:hover {
+    border: 2px solid rgb(48, 47, 47);
+}
+
+#face:hover {
+    border: 2px solid rgb(108, 135, 187) ;
+}
+
+#gh:hover {
+    border: 2px solid rgb(74, 155, 85);
+}
+
+#lkd:hover {
+    border: 2px solid rgb(6, 56, 90);
+}
