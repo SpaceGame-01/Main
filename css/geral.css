@@ -17,6 +17,9 @@
 
 :root {
     --roxo: blueviolet;
+    
+    --header: rgb(111, 2, 213);
+    
     --roxo-escuro: rgb(83, 26, 136);
     --nome-game: white;
     --fundo-nome-game: #00000070;
@@ -37,12 +40,10 @@
     box-sizing: border-box;
 }
 
-body {
-    width: 100%;
+html, body {
     height: 100vh;
-
-    background-image: linear-gradient(-45deg, var(--roxo) ,var(--roxo-escuro));
-    background-size: 250% 250%;
+    width: 100vw;
+    background-color: var(--roxo);
 }
 
 header {
@@ -52,7 +53,7 @@ header {
     text-align: center;
 
     font-family: var(--fonte-padrao);
-    background: var(--roxo);
+    background: var(--header);
 
     position: sticky;
     top: -1px;
@@ -108,7 +109,7 @@ main {
     width: 311px;
 
     margin: auto;
-    margin-top: 5px;
+    margin-top: 5%;
 
     border: 2px solid rgba(0, 0, 0, 0.11);
     border-radius: 3%;
@@ -124,35 +125,7 @@ main {
 }
 
 footer {
-    position: absolute;
-    bottom: -1px;
-
-    width: 100%;
-    height: 4%;
-    font-size: .9em;
-
-    text-align: center;
-    margin-top: 5px;
-    
-    animation: sombra 5s ease-in-out infinite;
-
-    background-color: var(--roxo);
-    color: white;
-}
-
-footer p {
-    position: relative;
-    top: 14%;
-    letter-spacing: 3px;
-    color: rgba(0, 0, 0, 0.63);
-    font-weight: bolder;
-}
-
-footer a {
-    font-family: 'Times New Roman', Times, serif;
-    letter-spacing: 2px;
-    text-decoration: none;
-    color:var(--link-footer);
+    display: none;
 }
 
 @keyframes deg {
