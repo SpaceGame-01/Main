@@ -1,6 +1,9 @@
 @charset "UTF-8";
 
 @media screen and (orientation: portrait) {
+    br {
+        display: none;
+    }
 
     ::-webkit-scrollbar {
         display: none;
@@ -30,7 +33,7 @@
         width: 30px;
         margin: 5px;
 
-        top: -65px;
+        top: -75px;
         background-color: black;
         box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.707);
     }
