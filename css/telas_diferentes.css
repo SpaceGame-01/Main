@@ -119,38 +119,6 @@
         color: var(--roxo);
     }
     
-    footer {
-        position: sticky;
-        bottom: -1px;
-    
-        width: 100%;
-        height: 4%;
-        font-size: .9em;
-    
-        text-align: center;
-        margin-top: 5px;
-        display: block;
-        
-        animation: sombra 5s ease-in-out infinite;
-    
-        background-color: var(--roxo);
-        color: white;
-    }
-    
-    footer p {
-        position: relative;
-        top: 14%;
-        letter-spacing: 3px;
-        color: rgba(0, 0, 0, 0.63);
-        font-weight: bolder;
-    }
-    
-    footer a {
-        font-family: 'Times New Roman', Times, serif;
-        letter-spacing: 2px;
-        text-decoration: none;
-        color:var(--link-footer);
-    }
 
     @keyframes logo {
         0% {
