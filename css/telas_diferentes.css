@@ -10,6 +10,13 @@
     }
 }
 
+@media screen and (min-width: 772px) {
+    html, body {
+        width: 100%;
+    }
+    
+}
+
 @media screen and (min-width: 992px) {
     body {
         width: 100%;
@@ -110,8 +117,10 @@
 
     .ed {
         color: var(--roxo);
-    }footer {
-        position: absolute;
+    }
+    
+    footer {
+        position: sticky;
         bottom: -1px;
     
         width: 100%;
@@ -120,6 +129,7 @@
     
         text-align: center;
         margin-top: 5px;
+        display: block;
         
         animation: sombra 5s ease-in-out infinite;
     

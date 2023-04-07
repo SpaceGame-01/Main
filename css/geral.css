@@ -40,9 +40,9 @@
     box-sizing: border-box;
 }
 
-html, body {
-    height: 93vh;
-    width: 100vw;
+body {
+    height: 90%;
+    width: 100%;
     background-color: var(--roxo);
 }
 
@@ -55,16 +55,15 @@ header {
     font-family: var(--fonte-padrao);
     background: var(--header);
 
-    position: sticky;
-    top: -1px;
-    z-index: 1;
+    position: absolute;
+    
 
 }
 
 header h1 {
     position: relative;
     font-size: 2.1em;
-    top: 5px;
+    top: -3px;
 }
 
 header section a {
@@ -85,7 +84,7 @@ section .img_cntt {
 
     margin: 2px;
     left: -2%;
-    top: -30px;
+    top: -35px;
 
 }
 
@@ -106,11 +105,11 @@ main {
 
     transform: translate(-50%, -50%);
 
-    height: 585px;
+    height: 520px;
     width: 311px;
 
     margin: auto;
-    margin-top: 5%;
+    margin-top: 2%;
 
     border: 2px solid rgba(0, 0, 0, 0.11);
     border-radius: 3%;
