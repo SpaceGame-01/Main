@@ -10,22 +10,14 @@
     }
 }
 
-@media screen and (min-width: 772px) {
-    html, body {
-        width: 100%;
-    }
-    
-}
-
 @media screen and (min-width: 992px) {
     body {
-        width: 100%;
-        height: 100vh;
     
         background-size: 300% 300%;
     } 
     
     header {
+        position: absolute;
         height: 15%;
     }
     header h1 {
@@ -52,6 +44,7 @@
     }
     
     main {
+        position: absolute;
         display: block;
         height: 100%;
         width: 75%;
