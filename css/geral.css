@@ -40,9 +40,14 @@
     box-sizing: border-box;
 }
 
-html, body {
-    height: 93vh;
+html {
+    height: 100vh;
+}
+
+body {
+    height: 100%;
     width: 100%;
+
     background-image: linear-gradient(-45deg, var(--roxo), var(--roxo-escuro)) ;
 }
 
@@ -56,7 +61,6 @@ header {
     background: var(--header);
 
     position: absolute;
-    
 
 }
 
